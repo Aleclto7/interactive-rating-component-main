@@ -7,7 +7,7 @@
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216deg 12% 54% / 16%);
-    --dark-blue: hsl(213deg 19% 18% / 37%);
+    --dark-blue: hsla(213, 20%, 18%, 0.171);
     --very-dark-blue: hsl(216, 12%, 8%);
 
     /* Font */
@@ -28,11 +28,14 @@ html {
 main {
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 .card__container {
     background: linear-gradient(var(--medium-grey), var(--dark-blue));
     width: 90%;
-    height: 360px;
+    max-width: 340px;
+    height: 54%;
+    max-height: 400px;
     padding: 20px 30px;
     margin: auto;
     border-radius: 15px;
@@ -45,7 +48,6 @@ main {
     height: 40px;
     background: var(--medium-grey);
     border-radius: 50%;
-    margin-bottom: 20px;
 }
 .box__icon {
     display: block;
@@ -93,14 +95,15 @@ main {
 }
 
 .container__1 {
-    display: block;
+    display: none;
 }
 .container__2 {
     display: flex;
-    display: none;
+    /* display: block; */
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 .container__icon {
     display: block;
@@ -116,4 +119,17 @@ main {
     border-radius: 30px;
     font-size: var(--sm);
     margin-bottom: 20px;
+}
+
+@media (min-width:600px) {
+    .card__container {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .container__selection {
+        margin-bottom: 30px;
+    }
+    .container__info {
+        margin-bottom: 5px;
+    }
 }
