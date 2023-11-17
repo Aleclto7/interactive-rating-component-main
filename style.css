@@ -6,14 +6,14 @@
     /* Neutral */
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
-    --medium-grey: hsl(216, 12%, 54%);
-    --dark-blue: hsl(213, 19%, 18%);
+    --medium-grey: hsl(216deg 12% 54% / 16%);
+    --dark-blue: hsl(213deg 19% 18% / 63%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
     /* Font */
     --sm: 1.2rem;
-    --md: 1.5rem;
-    --lg: 2rem;
+    --md: 1.4rem;
+    --lg: 2.5rem;
 }
 * {
     box-sizing: border-box;
@@ -29,30 +29,91 @@ main {
     width: 100vw;
     height: 100vh;
 }
-card__container {
-
+.card__container {
+    background: var(--dark-blue);
+    width: 90%;
+    height: 360px;
+    padding: 20px 30px;
+    margin: auto;
+    border-radius: 15px;
 }
-container__icon {
-
+.container__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: var(--medium-grey);
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-container__title {
-
+.box__icon {
+    display: block;
+    width: 17px;
+    height: 16px;
+    background-image: url('./images/icon-star.svg');
 }
-container__info {
-
+.container__title {
+    font-size: var(--lg);
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 10px;
 }
-container__ratings {
-
+.container__info {
+    color: var(--light-grey);
+    font-size: var(--md);
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
-ratings__imput {
-
+.container__ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
-ratings__label {
-
+.ratings__imput {
+    display: none;
 }
-rating__p {
-
+.ratings__label {
+    padding: 13px 18px;
+    background: var(--medium-grey);
+    border-radius: 50%;
 }
-container__button {
+.rating__p {
+    color: var(--light-grey);
+    font-size: var(--md);
+}
+.container__button {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border:none;
+    font-size: var(--md);
+    color: var(--white);
+    background: var(--orange);
+}
 
+.container__1 {
+    display: block;
+}
+.container__2 {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container__icon {
+    display: block;
+    width: 162px;
+    height: 108px;
+    background-image: url('./images/illustration-thank-you.svg');
+    margin: 18px;
+}
+.container__selection {
+    background: var(--medium-grey);
+    color: var(--orange);
+    padding: 8px;
+    border-radius: 30px;
+    font-size: var(--sm);
+    margin-bottom: 20px;
 }
