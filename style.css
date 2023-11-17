@@ -1,0 +1,58 @@
+:root {
+    /* Colors */
+    /* Primary */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    /* Font */
+    --sm: 1.2rem;
+    --md: 1.5rem;
+    --lg: 2rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+    background: var(--very-dark-blue);
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+card__container {
+
+}
+container__icon {
+
+}
+container__title {
+
+}
+container__info {
+
+}
+container__ratings {
+
+}
+ratings__imput {
+
+}
+ratings__label {
+
+}
+rating__p {
+
+}
+container__button {
+
+}
