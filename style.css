@@ -150,4 +150,7 @@ main {
     .container__info {
         margin-bottom: 5px;
     }
+    .ratings__label {
+        padding: 16px 21px;    
+    }
 }
